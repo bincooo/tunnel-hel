@@ -5,7 +5,7 @@ import (
 
 	"github.com/tongsq/go-lib/logger"
 	"github.com/tongsq/go-lib/request"
-	"proxy-collect/consts"
+	"tunnel-hel/consts"
 )
 
 func NewGetProxyZdayeIndex() *ZdayeIndex {

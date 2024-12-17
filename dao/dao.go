@@ -1,9 +1,9 @@
 package dao
 
 import (
-	"proxy-collect/config"
-	"proxy-collect/dao/database"
-	"proxy-collect/dao/redis"
+	"tunnel-hel/config"
+	"tunnel-hel/dao/database"
+	"tunnel-hel/dao/redis"
 )
 
 var ProxyDao proxyDaoInterface

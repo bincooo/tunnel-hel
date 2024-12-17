@@ -13,9 +13,9 @@ import (
 
 	"github.com/tongsq/go-lib/logger"
 	"github.com/tongsq/gost"
-	"proxy-collect/config"
-	"proxy-collect/dto"
-	"proxy-collect/service/common"
+	"tunnel-hel/config"
+	"tunnel-hel/dto"
+	"tunnel-hel/service/common"
 )
 
 type stringList []string

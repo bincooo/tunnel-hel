@@ -7,9 +7,9 @@ import (
 
 	"github.com/tongsq/go-lib/logger"
 	redis_client "github.com/tongsq/go-lib/redis-client"
-	"proxy-collect/consts"
-	"proxy-collect/dto"
-	"proxy-collect/model"
+	"tunnel-hel/consts"
+	"tunnel-hel/dto"
+	"tunnel-hel/model"
 )
 
 const PROXY_FAIL_SET = "proxy_fail_set"

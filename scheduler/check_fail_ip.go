@@ -2,10 +2,10 @@ package scheduler
 
 import (
 	"github.com/tongsq/go-lib/logger"
-	"proxy-collect/dao"
-	"proxy-collect/dto"
-	"proxy-collect/global"
-	"proxy-collect/service"
+	"tunnel-hel/dao"
+	"tunnel-hel/dto"
+	"tunnel-hel/global"
+	"tunnel-hel/service"
 )
 
 type CheckFailIp struct {

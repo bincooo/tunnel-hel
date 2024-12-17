@@ -3,7 +3,7 @@ package tests
 import (
 	"testing"
 
-	"proxy-collect/config"
+	"tunnel-hel/config"
 )
 
 func TestConfig(t *testing.T) {

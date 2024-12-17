@@ -3,10 +3,10 @@ package scheduler
 import (
 	"encoding/json"
 	"github.com/tongsq/go-lib/logger"
-	"proxy-collect/config"
-	"proxy-collect/global"
-	"proxy-collect/service"
-	"proxy-collect/service/proxy_getter"
+	"tunnel-hel/config"
+	"tunnel-hel/global"
+	"tunnel-hel/service"
+	"tunnel-hel/service/proxy_getter"
 )
 
 type GetIp struct {

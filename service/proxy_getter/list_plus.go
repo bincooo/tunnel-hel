@@ -7,8 +7,8 @@ import (
 	"github.com/PuerkitoBio/goquery"
 	"github.com/tongsq/go-lib/logger"
 	"github.com/tongsq/go-lib/request"
-	"proxy-collect/consts"
-	"proxy-collect/service/common"
+	"tunnel-hel/consts"
+	"tunnel-hel/service/common"
 )
 
 func NewGetProxyProxyList() *getProxyProxyList {

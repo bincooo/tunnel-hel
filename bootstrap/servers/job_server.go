@@ -3,8 +3,8 @@ package servers
 import (
 	"github.com/robfig/cron/v3"
 	"github.com/tongsq/go-lib/logger"
-	"proxy-collect/scheduler"
-	"proxy-collect/service/ip"
+	"tunnel-hel/scheduler"
+	"tunnel-hel/service/ip"
 )
 
 type JobItem struct {

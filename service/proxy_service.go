@@ -10,12 +10,12 @@ import (
 	"github.com/tongsq/go-lib/component"
 	"github.com/tongsq/go-lib/logger"
 	"github.com/tongsq/go-lib/request"
-	"proxy-collect/config"
-	"proxy-collect/consts"
-	"proxy-collect/dao"
-	"proxy-collect/dto"
-	"proxy-collect/global"
-	"proxy-collect/service/ip"
+	"tunnel-hel/config"
+	"tunnel-hel/consts"
+	"tunnel-hel/dao"
+	"tunnel-hel/dto"
+	"tunnel-hel/global"
+	"tunnel-hel/service/ip"
 )
 
 func NewProxyService() *proxyService {

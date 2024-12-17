@@ -3,13 +3,13 @@ package tests
 import (
 	"encoding/json"
 	"github.com/tongsq/go-lib/logger"
-	"proxy-collect/bootstrap"
-	"proxy-collect/config"
-	"proxy-collect/global"
-	"proxy-collect/service"
-	"proxy-collect/service/proxy_getter"
 	"testing"
 	"time"
+	"tunnel-hel/bootstrap"
+	"tunnel-hel/config"
+	"tunnel-hel/global"
+	"tunnel-hel/service"
+	"tunnel-hel/service/proxy_getter"
 )
 
 func TestGetter(t *testing.T) {

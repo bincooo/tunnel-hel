@@ -8,8 +8,8 @@ import (
 	"github.com/tongsq/go-lib/logger"
 	"github.com/tongsq/go-lib/request"
 	"golang.org/x/text/encoding/simplifiedchinese"
-	"proxy-collect/consts"
-	"proxy-collect/service/common"
+	"tunnel-hel/consts"
+	"tunnel-hel/service/common"
 )
 
 func NewGetProxy66ip() *getProxy66ip {

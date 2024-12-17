@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/tongsq/go-lib/logger"
-	"proxy-collect/bootstrap"
-	"proxy-collect/service"
+	"tunnel-hel/bootstrap"
+	"tunnel-hel/service"
 )
 
 func TestGetIp(t *testing.T) {

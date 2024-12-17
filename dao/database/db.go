@@ -2,7 +2,7 @@ package database
 
 import (
 	"github.com/jinzhu/gorm"
-	"proxy-collect/config"
+	"tunnel-hel/config"
 )
 import _ "github.com/jinzhu/gorm/dialects/mysql"
 

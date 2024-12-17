@@ -1,4 +1,4 @@
-### proxy-collect - GO Proxy Collector
+### tunnel-hel - GO Proxy Collector
 
 ### A simple proxy pool written in Golang
 
@@ -17,8 +17,8 @@ Features
 
 #### install
 
-    git clone https://github.com/tongsq/proxy-collect.git
-    cd proxy-collect
+    git clone https://github.com/tongsq/tunnel-hel.git
+    cd tunnel-hel
 
 #### start service
 1、Start script to collect free proxy IP

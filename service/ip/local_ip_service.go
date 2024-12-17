@@ -8,7 +8,7 @@ import (
 
 	"github.com/tongsq/go-lib/logger"
 	"golang.org/x/text/encoding/simplifiedchinese"
-	"proxy-collect/dto"
+	"tunnel-hel/dto"
 )
 
 const (

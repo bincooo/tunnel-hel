@@ -1,10 +1,10 @@
 package bootstrap
 
 import (
-	"proxy-collect/config"
-	"proxy-collect/dao"
-	"proxy-collect/global"
-	"proxy-collect/service"
+	"tunnel-hel/config"
+	"tunnel-hel/dao"
+	"tunnel-hel/global"
+	"tunnel-hel/service"
 )
 
 func Bootstrap() {

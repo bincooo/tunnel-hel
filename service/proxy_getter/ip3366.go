@@ -6,9 +6,9 @@ import (
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/tongsq/go-lib/logger"
-	"proxy-collect/consts"
-	"proxy-collect/global"
-	"proxy-collect/service/common"
+	"tunnel-hel/consts"
+	"tunnel-hel/global"
+	"tunnel-hel/service/common"
 )
 
 func NewGetProxyIp3366() *getProxyIp3366 {

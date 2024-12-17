@@ -6,8 +6,8 @@ import (
 	"time"
 
 	"github.com/tongsq/go-lib/logger"
-	"proxy-collect/consts"
-	"proxy-collect/global"
+	"tunnel-hel/consts"
+	"tunnel-hel/global"
 )
 
 func NewGetProxyGeonode() *geonode {

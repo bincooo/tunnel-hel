@@ -1,7 +1,7 @@
 package dto
 
 import (
-	"proxy-collect/model"
+	"tunnel-hel/model"
 )
 
 type ProxyInfoDto struct {

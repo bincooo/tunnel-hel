@@ -2,7 +2,7 @@ package redis
 
 import (
 	redis_client "github.com/tongsq/go-lib/redis-client"
-	"proxy-collect/config"
+	"tunnel-hel/config"
 )
 
 var client *redis_client.RedisClient

@@ -1,9 +1,9 @@
-proxy-collect - GO Proxy Collector
+tunnel-hel - GO Proxy Collector
 ------
 ### GO语言实现的ip代理池，隧道代理
 
 #### [English README](README.en.md)
-![图片](https://tongsq.github.io/proxy-collect/doc/diagram.jpg)
+![图片](https://tongsq.github.io/tunnel-hel/doc/diagram.jpg)
 
 功能
 ------
@@ -20,8 +20,8 @@ proxy-collect - GO Proxy Collector
 
 #### 安装
 
-    git clone https://github.com/tongsq/proxy-collect.git
-    cd proxy-collect
+    git clone https://github.com/tongsq/tunnel-hel.git
+    cd tunnel-hel
 
 #### 启动服务
 1、启动脚本收集免费代理ip

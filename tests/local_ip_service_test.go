@@ -3,7 +3,7 @@ package tests
 import (
 	"testing"
 
-	"proxy-collect/service/ip"
+	"tunnel-hel/service/ip"
 )
 
 func TestGetIpInfoLocal(t *testing.T) {

@@ -10,8 +10,8 @@ import (
 	"github.com/PuerkitoBio/goquery"
 	"github.com/tongsq/go-lib/logger"
 	"github.com/tongsq/go-lib/request"
-	"proxy-collect/consts"
-	"proxy-collect/dao"
+	"tunnel-hel/consts"
+	"tunnel-hel/dao"
 )
 
 func NewGetProxyZdaye() *Zdaye {

@@ -10,9 +10,9 @@ import (
 	"github.com/go-log/log"
 	"github.com/tongsq/go-lib/logger"
 	"github.com/tongsq/gost"
-	"proxy-collect/config"
-	"proxy-collect/dao"
-	"proxy-collect/dto"
+	"tunnel-hel/config"
+	"tunnel-hel/dao"
+	"tunnel-hel/dto"
 )
 
 var (

@@ -5,9 +5,9 @@ import (
 	"os"
 
 	"github.com/tongsq/go-lib/logger"
-	"proxy-collect/bootstrap"
-	"proxy-collect/bootstrap/servers"
-	"proxy-collect/config"
+	"tunnel-hel/bootstrap"
+	"tunnel-hel/bootstrap/servers"
+	"tunnel-hel/config"
 )
 
 var (

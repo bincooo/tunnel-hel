@@ -4,9 +4,9 @@ import (
 	"time"
 
 	"github.com/jinzhu/gorm"
-	"proxy-collect/consts"
-	"proxy-collect/dto"
-	"proxy-collect/model"
+	"tunnel-hel/consts"
+	"tunnel-hel/dto"
+	"tunnel-hel/model"
 )
 
 func NewMysqlProxyDao() *proxyDao {

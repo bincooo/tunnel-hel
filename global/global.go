@@ -6,8 +6,8 @@ import (
 	"github.com/tongsq/go-lib/component"
 	"github.com/tongsq/go-lib/logger"
 	"github.com/tongsq/go-lib/request"
-	"proxy-collect/config"
-	"proxy-collect/consts"
+	"tunnel-hel/config"
+	"tunnel-hel/consts"
 )
 
 var Pool *component.Pool

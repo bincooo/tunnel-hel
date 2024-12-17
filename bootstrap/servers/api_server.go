@@ -8,9 +8,9 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/tongsq/go-lib/logger"
-	"proxy-collect/config"
-	"proxy-collect/dao"
-	"proxy-collect/dto"
+	"tunnel-hel/config"
+	"tunnel-hel/dao"
+	"tunnel-hel/dto"
 )
 
 func StartApiServer() {

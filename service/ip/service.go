@@ -1,8 +1,8 @@
 package ip
 
 import (
-	"proxy-collect/config"
-	"proxy-collect/dto"
+	"tunnel-hel/config"
+	"tunnel-hel/dto"
 )
 
 var localIpServiceInstance *localIpService

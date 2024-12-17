@@ -4,11 +4,11 @@ import (
 	"sync"
 	"testing"
 
-	"proxy-collect/consts"
-	"proxy-collect/service"
+	"tunnel-hel/consts"
+	"tunnel-hel/service"
 )
 
-//https://pzzqz.com/
+// https://pzzqz.com/
 func TestCheckIp(t *testing.T) {
 	items := [][]string{
 		{"localhost", "9999", consts.PROTO_HTTPS},

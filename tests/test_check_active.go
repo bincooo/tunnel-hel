@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/tongsq/go-lib/logger"
-	"proxy-collect/dao"
+	"tunnel-hel/dao"
 )
 
 func TestActive(t *testing.T) {

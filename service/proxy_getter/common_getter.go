@@ -4,8 +4,8 @@ import (
 	"regexp"
 
 	"github.com/tongsq/go-lib/logger"
-	"proxy-collect/consts"
-	"proxy-collect/global"
+	"tunnel-hel/consts"
+	"tunnel-hel/global"
 )
 
 var urlList = map[string][]string{

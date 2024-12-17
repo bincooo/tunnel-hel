@@ -5,8 +5,8 @@ import (
 	"time"
 
 	"github.com/tongsq/go-lib/logger"
-	"proxy-collect/dao"
-	"proxy-collect/service/ip"
+	"tunnel-hel/dao"
+	"tunnel-hel/service/ip"
 )
 
 type UpdateIpInfo struct {

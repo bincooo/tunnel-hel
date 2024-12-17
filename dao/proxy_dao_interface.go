@@ -1,8 +1,8 @@
 package dao
 
 import (
-	"proxy-collect/dto"
-	"proxy-collect/model"
+	"tunnel-hel/dto"
+	"tunnel-hel/model"
 )
 
 type proxyDaoInterface interface {

@@ -1,9 +1,9 @@
 package service
 
 import (
-	"proxy-collect/consts"
-	"proxy-collect/service/ip"
-	"proxy-collect/service/proxy_getter"
+	"tunnel-hel/consts"
+	"tunnel-hel/service/ip"
+	"tunnel-hel/service/proxy_getter"
 )
 
 var ProxyService = NewProxyService()

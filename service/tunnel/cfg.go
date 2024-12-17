@@ -14,7 +14,7 @@ import (
 
 	"github.com/tongsq/go-lib/logger"
 	"github.com/tongsq/gost"
-	"proxy-collect/config"
+	"tunnel-hel/config"
 )
 
 type baseConfig struct {

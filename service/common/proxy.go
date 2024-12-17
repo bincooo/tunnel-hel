@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"regexp"
 
-	"proxy-collect/config"
-	"proxy-collect/consts"
-	"proxy-collect/dto"
+	"tunnel-hel/config"
+	"tunnel-hel/consts"
+	"tunnel-hel/dto"
 )
 
 func CheckProxyFormat(host string, port string) bool {

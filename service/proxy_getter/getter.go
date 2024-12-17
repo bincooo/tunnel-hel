@@ -5,11 +5,11 @@ import (
 	"github.com/tongsq/go-lib/request"
 	"math/rand"
 	"os"
-	"proxy-collect/config"
-	"proxy-collect/dao"
 	"regexp"
 	"strings"
 	"time"
+	"tunnel-hel/config"
+	"tunnel-hel/dao"
 
 	"github.com/tongsq/go-lib/logger"
 )
