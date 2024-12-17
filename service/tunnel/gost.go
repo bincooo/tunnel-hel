@@ -87,7 +87,7 @@ func start() error {
 }
 
 func getProxyList() ([]dto.ProxyDto, error) {
-	proxies, err := dao.ProxyDao.GetActiveList()
+	proxies, err := dao.Db.GetActiveList()
 	if err != nil {
 		logger.Error("get active ip fail", logger.Fields{"err": err})
 		return nil, err

@@ -52,7 +52,7 @@ func (s *getter) GetContentHtml(requestUrl string) string {
 	var err error
 	options := request.NewOptions().WithHeader(h)
 	if s.config.Proxy {
-		proxies, err := dao.ProxyDao.GetActiveList()
+		proxies, err := dao.Db.GetActiveList()
 		if err == nil && len(proxies) > 0 {
 			rand.Seed(time.Now().Unix())
 			i := rand.Intn(len(proxies))

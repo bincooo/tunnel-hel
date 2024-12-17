@@ -1,4 +1,4 @@
-dao: redis #set storage type -> redis|database
+dao: database #set storage type -> redis|database
 redis: #redis config
   MaxIdle: 0
   MaxActive: 10
@@ -6,14 +6,14 @@ redis: #redis config
   Address: 127.0.0.1:6379
   Password:
 database: #database config
-  Dialect: mysql
-  Args: python:123456@(127.0.0.1:3306)/py?charset=utf8&loc=Local
+  Dialect: sqlite3
+  Args: data.db
   MaxIdle: 5 #max idle connections count
   MaxOpen: 20 #max connections count
 api:
   host: 0.0.0.0
   port: 8090
-  token: abc #调用api的token，不用较验可不配置
+  token: #调用api的token，不用较验可不配置
 poolSize: 1000
 localIpDataPath: /tmp/local_ip_data.dat
 recheckCount: 10 #recheck count if ip is invalid

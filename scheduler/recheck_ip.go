@@ -13,7 +13,7 @@ type RecheckIp struct {
 
 func (s RecheckIp) Run() {
 	logger.FSuccess("recheck ip start run")
-	proxies, err := dao.ProxyDao.GetRecheckList()
+	proxies, err := dao.Db.GetRecheckList()
 	if err != nil {
 		logger.Error("get recheck ip list fail", logger.Fields{"err": err})
 	}

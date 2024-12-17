@@ -13,7 +13,7 @@ type CheckFailIp struct {
 
 func (s CheckFailIp) Run() {
 	logger.FSuccess("check fail ip start run")
-	proxies, err := dao.ProxyDao.GetFailList()
+	proxies, err := dao.Db.GetFailList()
 	if err != nil {
 		logger.Error("get need check ip list fail", logger.Fields{"err": err})
 	}

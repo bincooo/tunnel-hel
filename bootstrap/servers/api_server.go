@@ -14,7 +14,12 @@ import (
 )
 
 func StartApiServer() {
+	c := config.Get().Api
+	if !c.Debug {
+		gin.SetMode(gin.ReleaseMode)
+	}
 	r := gin.Default()
+
 	router := r.Use(TokenAuthMiddleware)
 	router.GET("/ping", func(c *gin.Context) {
 		c.JSON(200, gin.H{
@@ -29,7 +34,7 @@ func StartApiServer() {
 			})
 			return
 		}
-		proxies, err := dao.ProxyDao.GetActiveList()
+		proxies, err := dao.Db.GetActiveList()
 		if err != nil {
 			logger.Error("get active proxy fail", logger.Fields{"err": err})
 			c.JSON(200, gin.H{
@@ -93,6 +98,12 @@ func StartApiServer() {
 		c.JSON(200, gin.H{
 			"message": "success",
 		})
+	})
+
+	logger.Info("启动API", map[string]interface{}{
+		"host":  c.Host,
+		"port":  c.Port,
+		"token": c.Token,
 	})
 	err := r.Run(fmt.Sprintf("%s:%s", config.Get().Api.Host, config.Get().Api.Port))
 	if err != nil {

@@ -9,7 +9,8 @@ import (
 	"tunnel-hel/model"
 )
 
-func NewMysqlProxyDao() *proxyDao {
+func NewDao() *proxyDao {
+	DB().CreateTable(&model.ProxyModel{})
 	return &proxyDao{}
 }
 
@@ -30,8 +31,7 @@ func (d *proxyDao) GetRecheckList() ([]model.ProxyModel, error) {
 
 func (d *proxyDao) GetOne(host string, port string, proto string) (*model.ProxyModel, error) {
 	var m model.ProxyModel
-	db := DB()
-	err := db.Where("host = ? AND port = ? AND proto = ?", host, port, proto).First(&m).Error
+	err := DB().Where("host = ? AND port = ? AND proto = ?", host, port, proto).First(&m).Error
 	if err != nil {
 		if gorm.IsRecordNotFoundError(err) {
 			return nil, nil

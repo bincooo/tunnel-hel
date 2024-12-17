@@ -17,7 +17,7 @@ const PROXY_INFO_MAP = "proxy_info_map"
 const PROXY_SUCCESS_SET = "proxy_success_set"
 const PROXY_RECHECK_SET = "proxy_recheck_set"
 
-func NewRedisProxyDao() *proxyDao {
+func NewDao() *proxyDao {
 	return &proxyDao{}
 }
 

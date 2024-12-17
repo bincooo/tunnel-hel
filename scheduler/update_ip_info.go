@@ -14,7 +14,7 @@ type UpdateIpInfo struct {
 
 func (s UpdateIpInfo) Run() {
 	logger.FSuccess("update ip info start run")
-	proxies := dao.ProxyDao.GetNeedUpdateInfoList()
+	proxies := dao.Db.GetNeedUpdateInfoList()
 	logger.FInfo(fmt.Sprintf("count:%d, cap: %d\n", len(proxies), cap(proxies)))
 	for _, proxy := range proxies {
 		//use online ip database
@@ -29,7 +29,7 @@ func (s UpdateIpInfo) Run() {
 		proxy.Isp = ipInfoDto.Isp
 		proxy.Region = ipInfoDto.Region
 		proxy.City = ipInfoDto.City
-		err := dao.ProxyDao.Save(&proxy)
+		err := dao.Db.Save(&proxy)
 		if err == nil {
 			logger.Success("update ip detail success", logger.Fields{"host": proxy.Host, "port": proxy.Port})
 		}

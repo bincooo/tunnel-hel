@@ -6,13 +6,13 @@ import (
 	"tunnel-hel/dao/redis"
 )
 
-var ProxyDao proxyDaoInterface
+var Db proxyDaoInterface
 
 func LoadDao() {
 	c := config.Get().Dao
 	if c == "redis" {
-		ProxyDao = redis.NewRedisProxyDao()
+		Db = redis.NewDao()
 	} else {
-		ProxyDao = database.NewMysqlProxyDao()
+		Db = database.NewDao()
 	}
 }

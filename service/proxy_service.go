@@ -59,7 +59,7 @@ func (s *proxyService) CheckProxyAndSave(p dto.ProxyDto) {
 		status = consts.STATUS_NO
 	}
 
-	proxyModel, err := dao.ProxyDao.GetOne(p.Host, p.Port, p.Proto)
+	proxyModel, err := dao.Db.GetOne(p.Host, p.Port, p.Proto)
 	if err != nil {
 		logger.Error("get model fail:%s", logger.Fields{"err": err})
 		return
@@ -68,7 +68,7 @@ func (s *proxyService) CheckProxyAndSave(p dto.ProxyDto) {
 		if status == consts.STATUS_NO {
 			return
 		}
-		_, err = dao.ProxyDao.Create(p, status)
+		_, err = dao.Db.Create(p, status)
 		if err != nil {
 			logger.Error("create proxy model fail", map[string]interface{}{"proxy": p})
 		}
@@ -95,7 +95,7 @@ func (s *proxyService) CheckProxyAndSave(p dto.ProxyDto) {
 		}
 		if proxyModel.CheckCount < 0 && status == consts.STATUS_NO {
 			logger.Debug("start delete fail proxy", map[string]interface{}{"proxy": proxyModel})
-			if err := dao.ProxyDao.Delete(p.Host, p.Port, p.Proto); err != nil {
+			if err := dao.Db.Delete(p.Host, p.Port, p.Proto); err != nil {
 				logger.Error("delete proxy fail", logger.Fields{"host": p.Host, "port": p.Port})
 			}
 			return
@@ -119,7 +119,7 @@ func (s *proxyService) CheckProxyAndSave(p dto.ProxyDto) {
 	proxyModel.User = p.User
 	proxyModel.Password = p.Password
 	proxyModel.Ping = p.Ping
-	_ = dao.ProxyDao.Save(proxyModel)
+	_ = dao.Db.Save(proxyModel)
 }
 
 func (s *proxyService) DoGetProxy(getProxyService ProxyGetterInterface, pool *component.Pool) {

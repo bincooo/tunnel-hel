@@ -88,6 +88,7 @@ type ConfDto struct {
 		Host  string `yaml:"host"`
 		Port  string `yaml:"port"`
 		Token string `yaml:"token"`
+		Debug bool   `yaml:"debug"`
 	}
 	PoolSize        int    `yaml:"poolSize"`
 	LocalIpDataPath string `yaml:"localIpDataPath"`

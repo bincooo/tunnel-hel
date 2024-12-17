@@ -55,7 +55,7 @@ func (s *Zdaye) GetContentHtml(requestUrl string) string {
 	}
 
 	logger.Info("get proxy from zdaye.com", logger.Fields{"url": requestUrl})
-	proxies, err := dao.ProxyDao.GetActiveList()
+	proxies, err := dao.Db.GetActiveList()
 	var data *request.HttpResultDto
 	if err == nil && len(proxies) > 0 {
 		rand.Seed(time.Now().Unix())

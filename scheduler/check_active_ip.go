@@ -13,7 +13,7 @@ type CheckActiveIp struct {
 
 func (s CheckActiveIp) Run() {
 	logger.FSuccess("check active ip start run")
-	proxies, err := dao.ProxyDao.GetActiveList()
+	proxies, err := dao.Db.GetActiveList()
 	if err != nil {
 		logger.Error("get active ip fail", logger.Fields{"err": err})
 	}

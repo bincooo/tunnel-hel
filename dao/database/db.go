@@ -4,17 +4,20 @@ import (
 	"github.com/jinzhu/gorm"
 	"tunnel-hel/config"
 )
+
 import _ "github.com/jinzhu/gorm/dialects/mysql"
+import _ "github.com/jinzhu/gorm/dialects/sqlite"
+import _ "github.com/jinzhu/gorm/dialects/postgres"
 
 var (
-	db *gorm.DB
+	_db *gorm.DB
 )
 
 func DB() *gorm.DB {
-	if db == nil {
-		db = NewDB()
+	if _db == nil {
+		_db = NewDB()
 	}
-	return db
+	return _db
 }
 
 func NewDB() (db *gorm.DB) {
